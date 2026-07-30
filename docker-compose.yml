@@ -1,0 +1,12 @@
+name: stampogen-marketing
+
+services:
+  web:
+    build: .
+    image: stampogen-marketing:latest
+    container_name: stampogen-marketing
+    restart: unless-stopped
+    ports:
+      # Host nginx proxies stampogen.com → this.
+      # 3080 = Invogen marketing, 3081 = Stampogen product — use 3082.
+      - "127.0.0.1:3082:80"
