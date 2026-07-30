@@ -40,7 +40,7 @@ export function Hero() {
             no app. no card to dig out of your wallet. just your <span className="text-charcoal font-black">Email.</span>
           </p>
           <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3.5 sm:gap-4">
-            <a href="https://app.stampogen.in/" className="w-full sm:w-auto">
+            <a href="https://app.stampogen.in/user/login" className="w-full sm:w-auto">
               <Button variant="primary" className="w-full sm:w-auto">Login as user</Button>
             </a>
             <a href="https://app.stampogen.in/affiliate/login" className="w-full sm:w-auto">
