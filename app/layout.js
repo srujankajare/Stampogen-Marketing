@@ -29,7 +29,11 @@ export const metadata = {
   title: "Stampogen — Every visit earns a stamp",
   description:
     "A QR loyalty card for local shops. Scan, collect a stamp, redeem a reward — no app, no plastic card, no losing your place.",
-  icons: [],
+  icons: {
+    icon: "/icon with blue no bg.png",
+    shortcut: "/icon with blue no bg.png",
+    apple: "/icon with blue no bg.png",
+  },
 };
 
 export default function RootLayout({ children }) {

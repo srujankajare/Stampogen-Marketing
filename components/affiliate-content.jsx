@@ -128,14 +128,24 @@ export function AffiliateContent() {
             initial={{ opacity: 0, y: 14 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3 }}
+            className="flex flex-col sm:flex-row items-center justify-center gap-3.5 sm:gap-4"
           >
-            <a href="/affiliate/onboarding">
+            <a href="/affiliate/onboarding" className="w-full sm:w-auto">
               <Button
                 variant="primary"
                 size="lg"
-                className="px-8 sm:px-10 py-4 sm:py-5 text-base sm:text-lg font-extrabold tracking-wide shadow-lg hover:shadow-xl transition-all"
+                className="w-full sm:w-auto px-8 sm:px-10 py-4 sm:py-5 text-base sm:text-lg font-extrabold tracking-wide shadow-lg hover:shadow-xl transition-all"
               >
-                Become An Affiliate Partner →
+                How to Become An Affiliate Partner →
+              </Button>
+            </a>
+            <a href="https://app.stampogen.in/affiliate/login" className="w-full sm:w-auto">
+              <Button
+                variant="navy"
+                size="lg"
+                className="w-full sm:w-auto px-8 sm:px-10 py-4 sm:py-5 text-base sm:text-lg font-extrabold tracking-wide shadow-lg hover:shadow-xl transition-all"
+              >
+                Create Account →
               </Button>
             </a>
           </motion.div>
@@ -227,16 +237,23 @@ export function AffiliateContent() {
                     }`}
                   >
                     {isYear && (
-                      <span className="absolute -top-3 right-4 sm:right-6 rounded-full bg-[#A8342A] px-2.5 sm:px-3 py-0.5 font-mono text-[9px] sm:text-[10px] font-bold text-paper shadow-sm">
-                        BEST VALUE (10x)
+                      <span className="absolute -top-3 right-4 sm:right-6 rounded-full bg-[#A8342A] px-2.5 sm:px-3 py-0.5 font-mono text-[9px] sm:text-[10px] font-bold text-paper shadow-sm uppercase tracking-wider">
+                        COMING SOON
                       </span>
                     )}
                     <div>
                       {/* Plan Name & Price */}
                       <div className="mb-4 sm:mb-5">
-                        <h3 className="font-display text-xl sm:text-2xl font-black text-charcoal mb-1">
-                          {p.name}
-                        </h3>
+                        <div className="flex items-center justify-between gap-2 mb-1">
+                          <h3 className="font-display text-xl sm:text-2xl font-black text-charcoal">
+                            {p.name}
+                          </h3>
+                          {isYear && (
+                            <span className="rounded-md bg-amber-100 border border-amber-300 px-2 py-0.5 font-mono text-[10px] sm:text-[11px] font-bold text-amber-900 uppercase tracking-wide">
+                              Coming Soon
+                            </span>
+                          )}
+                        </div>
                         <div className="font-display text-2xl sm:text-3xl md:text-4xl font-black text-charcoal flex items-baseline gap-1.5 flex-wrap">
                           <span>₹ {p.discountedPrice.toFixed(2)}</span>
                           <span className="text-xs text-[#9a938a] line-through font-mono">
@@ -393,18 +410,32 @@ export function AffiliateContent() {
             Join influencers, students, and freelancers who are building steady passive income with local business referrals.
           </p>
           
-          <a
-            href="/affiliate/onboarding"
-            className="inline-block w-full sm:w-auto"
-          >
-            <Button
-              variant="primary"
-              size="lg"
-              className="w-full sm:w-auto px-6 sm:px-12 py-4 sm:py-6 text-base sm:text-xl font-extrabold tracking-wide shadow-xl hover:shadow-2xl transition-all"
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-3.5 sm:gap-4">
+            <a
+              href="/affiliate/onboarding"
+              className="w-full sm:w-auto"
             >
-              Become An Affiliate Partner →
-            </Button>
-          </a>
+              <Button
+                variant="primary"
+                size="lg"
+                className="w-full sm:w-auto px-6 sm:px-10 py-4 sm:py-5 text-base sm:text-xl font-extrabold tracking-wide shadow-xl hover:shadow-2xl transition-all"
+              >
+                How to Become An Affiliate Partner →
+              </Button>
+            </a>
+            <a
+              href="https://app.stampogen.in/affiliate/login"
+              className="w-full sm:w-auto"
+            >
+              <Button
+                variant="navy"
+                size="lg"
+                className="w-full sm:w-auto px-6 sm:px-10 py-4 sm:py-5 text-base sm:text-xl font-extrabold tracking-wide shadow-xl hover:shadow-2xl transition-all"
+              >
+                Create Account →
+              </Button>
+            </a>
+          </div>
         </div>
       </section>
     </div>

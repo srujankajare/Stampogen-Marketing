@@ -123,7 +123,7 @@ export function OwnerDashboard() {
             {/* Action Button & Badges */}
             <div className="flex flex-wrap items-center gap-4">
               <a
-                href="#pricing"
+                href="https://app.stampogen.in/"
                 className="inline-flex items-center gap-2 rounded-xl bg-[#B54A28] px-6 py-3.5 font-display text-[14px] font-bold text-white transition-all hover:bg-[#9E3E20] shadow-md"
               >
                 Start Now →

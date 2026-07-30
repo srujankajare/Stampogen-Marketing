@@ -20,7 +20,9 @@ export function CtaWaitlist() {
     console.log("waitlist signup:", data);
     setSubmitted(true);
     reset();
-    setTimeout(() => setSubmitted(false), 4000);
+    setTimeout(() => {
+      window.location.href = "https://app.stampogen.in/";
+    }, 500);
   }
 
   return (

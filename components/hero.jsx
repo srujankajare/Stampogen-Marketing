@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import { StampCard } from "@/components/stamp-card";
+import Image from "next/image";
 
 export function Hero() {
   return (
@@ -40,25 +40,32 @@ export function Hero() {
             no app. no card to dig out of your wallet. just your <span className="text-charcoal font-black">Email.</span>
           </p>
           <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3.5 sm:gap-4">
-            <a href="#join" className="w-full sm:w-auto">
+            <a href="https://app.stampogen.in/" className="w-full sm:w-auto">
               <Button variant="primary" className="w-full sm:w-auto">Login as user</Button>
             </a>
-            <a href="/affiliate/onboarding" className="w-full sm:w-auto">
+            <a href="https://app.stampogen.in/affiliate/login" className="w-full sm:w-auto">
               <Button variant="navy" className="w-full sm:w-auto">Login as affiliate</Button>
             </a>
-            <a href="#owner" className="w-full sm:w-auto">
+            <a href="https://app.stampogen.in/" className="w-full sm:w-auto">
               <Button variant="ghost" className="w-full sm:w-auto">I run a business→</Button>
             </a>
           </div>
         </motion.div>
 
         <motion.div
-          initial={{ opacity: 0, y: 18, rotate: -1 }}
-          animate={{ opacity: 1, y: 0, rotate: -1 }}
+          initial={{ opacity: 0, y: 18, scale: 0.97 }}
+          animate={{ opacity: 1, y: 0, scale: 1 }}
           transition={{ duration: 0.55, delay: 0.1, ease: "easeOut" }}
           className="flex justify-center"
         >
-          <StampCard />
+          <Image
+            src="/mobile_scan.png"
+            alt="Mobile scan experience"
+            width={400}
+            height={500}
+            className="w-full max-w-[420px] sm:max-w-[520px] md:max-w-[600px] drop-shadow-2xl rounded-2xl object-contain"
+            priority
+          />
         </motion.div>
       </div>
     </section>

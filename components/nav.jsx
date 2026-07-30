@@ -8,7 +8,7 @@ import { Menu, X } from "lucide-react";
 const links = [
   { href: "/", label: "Home" },
   { href: "/about", label: "About us" },
-  { href: "/pricing", label: "Pricing" },
+  { href: "https://app.stampogen.in/pricing", label: "Pricing" },
   { href: "/affiliate", label: "Affiliate Program" },
 ];
 
@@ -18,7 +18,7 @@ export function Nav() {
   const isAffiliate = pathname?.startsWith("/affiliate");
 
   const buttonText = isAffiliate ? "Login as affiliate →" : "Login as shop owner →";
-  const buttonHref = isAffiliate ? "/affiliate/onboarding" : "#join";
+  const buttonHref = isAffiliate ? "https://app.stampogen.in/affiliate/login" : "https://app.stampogen.in/";
 
   const isActive = (href) => {
     if (href === "/") return pathname === "/";

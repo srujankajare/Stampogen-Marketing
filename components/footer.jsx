@@ -24,7 +24,7 @@ export function Footer() {
             {/* Social Icons */}
             <div className="flex items-center gap-3 pt-2">
               <a
-                href="https://instagram.com"
+                href="https://www.instagram.com/stampogen.in?igsh=OTYxbnpkeWMyc2Nv"
                 target="_blank"
                 rel="noreferrer"
                 className="flex h-9 w-9 items-center justify-center rounded-lg border border-slate-800 bg-slate-900/60 text-slate-400 transition-colors hover:border-slate-700 hover:text-white"
@@ -33,7 +33,7 @@ export function Footer() {
                 <Instagram className="h-4 w-4" />
               </a>
               <a
-                href="https://youtube.com"
+                href="https://www.youtube.com/@stampogen"
                 target="_blank"
                 rel="noreferrer"
                 className="flex h-9 w-9 items-center justify-center rounded-lg border border-slate-800 bg-slate-900/60 text-slate-400 transition-colors hover:border-slate-700 hover:text-white"
@@ -56,7 +56,7 @@ export function Footer() {
                 </a>
               </li>
               <li>
-                <a href="/pricing" className="hover:text-white transition-colors">
+                <a href="https://app.stampogen.in/pricing" className="hover:text-white transition-colors">
                   Pricing
                 </a>
               </li>

@@ -6,7 +6,6 @@ export const metadata = {
   title: "About Us — Our Story & Brand Identity | Stampogen",
   description:
     "Learn why we built Stampogen, our unique brand philosophy, and how we're reimagining local shop loyalty without paper waste.",
-  icons: [],
 };
 
 export default function AboutPage() {
