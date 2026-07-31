@@ -8,7 +8,7 @@ import { Input } from "@/components/ui/input";
 const personas = [
   {
     title: "Students & Campus Ambassadors",
-    desc: "Earn side income during college by introducing neighborhood cafés, boba shops, fast-food joints, and bookstores near campus to digital stamp cards.",
+    desc: "Earn side income during college by introducing neighborhood cafés, boba shops, fast-food joints, and bookstores near campus to digital loyalty software.",
     termsUrl: "#terms-students",
   },
   {
@@ -18,7 +18,7 @@ const personas = [
   },
   {
     title: "Freelancers & Digital Marketers",
-    desc: "Add digital loyalty & customer retention as a value-added service for your existing salon, gym, restaurant, and retail clients.",
+    desc: "Add digital loyalty software & customer retention as a value-added solution for your existing salon, gym, restaurant, and retail clients.",
     termsUrl: "#terms-freelancers",
   },
 ];
@@ -42,7 +42,7 @@ const steps = [
   {
     num: "04",
     title: "Earn Every Month",
-    desc: "Earn payouts for every shop that launches their digital stamp program — commission depends on your affiliate account type.",
+    desc: "Earn payouts for every shop that launches their digital loyalty software — commission depends on your affiliate account type.",
   },
 ];
 
@@ -122,7 +122,7 @@ export function AffiliateContent() {
             transition={{ delay: 0.2 }}
             className="mx-auto max-w-2xl text-lg leading-relaxed text-[#4a443f] mb-8"
           >
-            Join an affiliate program that values your partnership – it&apos;s completely free of charge! Refer local cafés, salons, and retailers to digital loyalty cards and earn a high-value one-time commission for every shop you onboard.
+            Join an affiliate program that values your partnership – it&apos;s completely free of charge! Refer local cafés, salons, and retailers to digital loyalty software and earn a high-value one-time commission for every shop you onboard.
           </motion.p>
           <motion.div
             initial={{ opacity: 0, y: 14 }}

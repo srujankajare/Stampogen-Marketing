@@ -15,7 +15,7 @@ export function AffiliateTermsContent() {
           Affiliate Terms &amp; Conditions
         </h1>
         <p className="text-sm sm:text-base text-gray-500 font-sans max-w-xl mx-auto">
-          Guidelines and terms governing participation in the Stampogen Affiliate Partner Program.
+          Guidelines and terms governing participation in the Stampogen Affiliate Partner Program. Stampogen is a SaaS product of <strong className="font-bold text-charcoal">Business Growth Services</strong>.
         </p>
       </div>
 
@@ -26,7 +26,7 @@ export function AffiliateTermsContent() {
             1. Acceptance of Terms
           </h2>
           <p className="text-[#57514A]">
-            By registering for or participating in the Stampogen Affiliate Program (&quot;Program&quot;), you agree to comply with these Affiliate Terms &amp; Conditions. If you do not agree, you may not participate in the Program.
+            By registering for or participating in the Stampogen Affiliate Program (&quot;Program&quot;), for the SaaS product Stampogen operated by <strong className="font-bold text-[#0A192F]">Business Growth Services</strong>, you agree to comply with these Affiliate Terms &amp; Conditions. If you do not agree, you may not participate in the Program.
           </p>
         </section>
 
@@ -35,7 +35,7 @@ export function AffiliateTermsContent() {
             2. Affiliate Program
           </h2>
           <p className="text-[#57514A]">
-            The Stampogen Affiliate Program allows approved affiliates to promote Stampogen&apos;s products and services using a unique referral link or referral code. Affiliates are eligible to earn commissions for successful referrals that meet the Program requirements.
+            The Stampogen Affiliate Program allows approved affiliates to promote Stampogen&apos;s digital loyalty software using a unique referral link or referral code. Affiliates are eligible to earn commissions for successful referrals that meet the Program requirements.
           </p>
         </section>
 

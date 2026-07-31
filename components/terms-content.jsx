@@ -15,7 +15,7 @@ export function TermsContent() {
           Terms &amp; Conditions
         </h1>
         <p className="text-sm sm:text-base text-gray-500 font-sans max-w-xl mx-auto">
-          Please read these Terms &amp; Conditions carefully before using the Stampogen platform and services.
+          Please read these Terms &amp; Conditions carefully before using the Stampogen digital loyalty software and services. Stampogen is a SaaS product of <strong className="font-bold text-charcoal">Business Growth Services</strong>.
         </p>
       </div>
 
@@ -26,7 +26,7 @@ export function TermsContent() {
             1. Acceptance of Terms
           </h2>
           <p className="text-[#57514A]">
-            By accessing or using the Stampogen platform (&quot;Service&quot;), you agree to be bound by these Terms &amp; Conditions. If you do not agree with these Terms, please do not use our Service.
+            By accessing or using the Stampogen digital loyalty software (&quot;Service&quot;), a SaaS product of <strong className="font-bold text-[#0A192F]">Business Growth Services</strong>, you agree to be bound by these Terms &amp; Conditions. If you do not agree with these Terms, please do not use our Service.
           </p>
         </section>
 
@@ -35,7 +35,7 @@ export function TermsContent() {
             2. Description of Service
           </h2>
           <p className="text-[#57514A]">
-            Stampogen is a cloud-based customer loyalty and engagement platform that enables businesses to create digital stamp cards, QR code-based loyalty programs, reward campaigns, customer engagement tools, and business analytics. Customers can earn digital stamps through eligible purchases or visits and redeem rewards offered by participating businesses.
+            Stampogen is digital loyalty software (a cloud-based SaaS product of <strong className="font-bold text-[#0A192F]">Business Growth Services</strong>) that enables businesses to create digital stamp cards, QR code-based loyalty programs, reward campaigns, customer engagement tools, and business analytics. Customers can earn digital stamps through eligible purchases or visits and redeem rewards offered by participating businesses.
           </p>
         </section>
 
@@ -53,7 +53,7 @@ export function TermsContent() {
             4. Loyalty Programs &amp; Rewards
           </h2>
           <p className="text-[#57514A]">
-            All loyalty programs, rewards, discounts, offers, and promotional campaigns available through Stampogen are created and managed solely by participating businesses. Stampogen provides only the technology platform and is not responsible for the availability, quality, redemption, expiry, or fulfillment of any reward offered by a business.
+            All loyalty programs, rewards, discounts, offers, and promotional campaigns available through Stampogen are created and managed solely by participating businesses. Stampogen provides only the digital loyalty software and is not responsible for the availability, quality, redemption, expiry, or fulfillment of any reward offered by a business.
           </p>
         </section>
 
@@ -68,7 +68,7 @@ export function TermsContent() {
             <li>Create fraudulent accounts.</li>
             <li>Earn or redeem digital stamps through unauthorized or deceptive methods.</li>
             <li>Copy, manipulate, or misuse QR codes.</li>
-            <li>Attempt to interfere with or disrupt the operation or security of the platform.</li>
+            <li>Attempt to interfere with or disrupt the operation or security of the digital loyalty software.</li>
             <li>Use the Service for any unlawful or prohibited activity.</li>
           </ul>
           <p className="text-[#57514A] pt-2">
@@ -120,7 +120,7 @@ export function TermsContent() {
             10. Intellectual Property
           </h2>
           <p className="text-[#57514A]">
-            All software, source code, trademarks, logos, designs, content, graphics, and technology associated with Stampogen are the exclusive property of Stampogen and are protected under applicable intellectual property laws. Users may not reproduce, modify, distribute, reverse engineer, or use any part of the Service without prior written permission.
+            All software, source code, trademarks, logos, designs, content, graphics, and technology associated with Stampogen are the exclusive property of <strong className="font-bold text-[#0A192F]">Business Growth Services</strong> and are protected under applicable intellectual property laws. Users may not reproduce, modify, distribute, reverse engineer, or use any part of the Service without prior written permission.
           </p>
         </section>
 

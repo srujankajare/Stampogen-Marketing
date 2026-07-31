@@ -15,7 +15,7 @@ export function PrivacyContent() {
           Privacy Policy
         </h1>
         <p className="text-sm sm:text-base text-gray-500 font-sans max-w-xl mx-auto">
-          This Privacy Policy describes how Stampogen collects, uses, and protects your information when you use our platform.
+          This Privacy Policy describes how Stampogen, a SaaS product of <strong className="font-bold text-charcoal">Business Growth Services</strong>, collects, uses, and protects your information when you use our digital loyalty software.
         </p>
       </div>
 
@@ -26,7 +26,7 @@ export function PrivacyContent() {
             1. Information We Collect
           </h2>
           <p className="text-[#57514A]">
-            We collect information that you provide directly when using Stampogen, including your name, phone number, email address, business information (for business accounts), and other details required to create and manage your account.
+            We collect information that you provide directly when using Stampogen digital loyalty software (a SaaS product of <strong className="font-bold text-[#0A192F]">Business Growth Services</strong>), including your name, phone number, email address, business information (for business accounts), and other details required to create and manage your account.
           </p>
         </section>
 
@@ -69,7 +69,7 @@ export function PrivacyContent() {
           </p>
           <ul className="list-disc pl-6 space-y-1.5 text-[#57514A]">
             <li>Participating businesses to manage loyalty programs and reward redemption.</li>
-            <li>Trusted third-party service providers such as payment gateways, cloud hosting providers, messaging services, and analytics providers that help us operate the platform.</li>
+            <li>Trusted third-party service providers such as payment gateways, cloud hosting providers, messaging services, and analytics providers that help us operate the digital loyalty software.</li>
             <li>Government or legal authorities when required by applicable law.</li>
           </ul>
         </section>
@@ -111,7 +111,7 @@ export function PrivacyContent() {
           <ul className="list-disc pl-6 space-y-1.5 text-[#57514A]">
             <li>Maintain your login session.</li>
             <li>Remember your preferences.</li>
-            <li>Improve platform performance and user experience.</li>
+            <li>Improve software performance and user experience.</li>
             <li>Provide secure authentication.</li>
           </ul>
           <p className="text-[#57514A] pt-2">
@@ -136,7 +136,7 @@ export function PrivacyContent() {
             <li>Analytics related to customer visits, QR scans, stamp collections, and reward redemptions.</li>
           </ul>
           <p className="text-[#57514A] pt-2">
-            This information is used solely to provide and improve the Stampogen platform and related business services.
+            This information is used solely to provide and improve the Stampogen digital loyalty software and related business services.
           </p>
         </section>
 

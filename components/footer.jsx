@@ -18,8 +18,8 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-[1.5fr_1fr_1fr_1fr] gap-10 lg:gap-14 pb-6">
           {/* Left Column: Description & Social Icons */}
           <div className="space-y-4">
-            <p className="text-sm text-slate-400 leading-relaxed max-w-sm font-sans">
-              The simplest digital loyalty card platform for Indian local businesses. Scan, collect stamps, and repeat — all in one place.
+            <p className="font-sans text-sm leading-relaxed text-slate-400">
+              The simplest digital loyalty software for Indian local businesses. Scan, collect loyalty points, and repeat — all in one place.
             </p>
             {/* Social Icons */}
             <div className="flex items-center gap-3 pt-2">
@@ -114,8 +114,7 @@ export function Footer() {
 
         {/* Bottom Copyright Bar */}
         <div className="pt-6 border-t border-slate-800/80 flex flex-col sm:flex-row items-center justify-between gap-4 font-mono text-xs text-slate-500">
-          <span>STAMPOGEN.IN — MADE IN INDIA</span>
-          <span>© {new Date().getFullYear()} Stampogen. All rights reserved.</span>
+          <span>© {new Date().getFullYear()} <strong className="font-semibold text-slate-400">Business Growth Services</strong>. All rights reserved.</span>
         </div>
       </div>
     </footer>

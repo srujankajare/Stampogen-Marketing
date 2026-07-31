@@ -26,11 +26,9 @@ export function Hero() {
             <strong className="font-extrabold text-ink-navy">
               Scan the QR after you pay
             </strong>
-            ,{" "}
-            <strong className="font-extrabold text-ink-red">
-              Watch a stamp land
-            </strong>
-            , And{" "}
+            {" "}
+            
+             And{" "}
             <strong className="font-extrabold text-brass">
               Get something free
             </strong>{" "}

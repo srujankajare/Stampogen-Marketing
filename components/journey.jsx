@@ -6,7 +6,7 @@ const steps = [
   {
     word: "DISCOVER",
     title: "SPOT THE\nCOUNTER QR",
-    body: "A small 'collect a stamp' sticker at billing — cafés, salons, gyms, car washes, the corner store.",
+    body: "A small 'collect loyalty points' sticker at billing — cafés, salons, gyms, car washes, the corner store.",
     img: "/discover.png",
   },
   {
@@ -17,7 +17,7 @@ const steps = [
   },
   {
     word: "COLLECT",
-    title: "WATCH THE\nSTAMP LAND",
+    title: "WATCH THE\nLOYALTY POINT LAND",
     body: "The card fills with one more mark, and shows exactly how many visits are left to go.",
     img: "/collect.png",
   },
@@ -37,7 +37,7 @@ export function Journey() {
         <div className="mx-auto max-w-7xl mb-3 sm:mb-12 px-1 sm:px-4">
           <span className="mb-1.5 sm:mb-3 block font-mono text-[28px] xs:text-[38px] sm:text-[68px] md:text-[88px] lg:text-[94px] font-black uppercase leading-[1.08] sm:leading-[1.05] tracking-tight text-ink-red">
             <span className="block">how a customer</span>
-            <span className="block">collects a stamp</span>
+            <span className="block">collects loyalty points</span>
           </span>
           <h2 className="font-display text-xl sm:text-3xl md:text-4xl font-extrabold leading-tight text-charcoal">
             Four steps, under ten seconds.

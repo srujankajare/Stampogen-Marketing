@@ -15,7 +15,7 @@ export function AffiliatePrivacyContent() {
           Affiliate Privacy Policy
         </h1>
         <p className="text-sm sm:text-base text-gray-500 font-sans max-w-xl mx-auto">
-          How Stampogen collects, tracks, processes, and protects partner information in the Affiliate Program.
+          How Stampogen (a SaaS product of <strong className="font-bold text-charcoal">Business Growth Services</strong>) collects, tracks, processes, and protects partner information in the Affiliate Program.
         </p>
       </div>
 
