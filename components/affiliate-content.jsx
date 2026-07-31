@@ -63,7 +63,7 @@ export function AffiliateContent() {
         "1 Counter QR Code",
         "Unlimited Regular Customers",
         "Real-Time Stamp Analytics",
-        "Instant WhatsApp & Web Cards",
+      
         "Standard Support",
       ],
     },
