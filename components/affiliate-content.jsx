@@ -8,18 +8,21 @@ import { Input } from "@/components/ui/input";
 const personas = [
   {
     title: "Students & Campus Ambassadors",
-    desc: "Earn side income during college by introducing neighborhood cafés, boba shops, fast-food joints, and bookstores near campus to digital loyalty software.",
+    desc: "Earn side income during college by introducing neighborhood cafés, boba shops, fast-food joints, and bookstores near campus — your referred clients get an exclusive 37% discount.",
     termsUrl: "#terms-students",
+    discountBadge: "37% Client Discount",
   },
   {
     title: "Social Media Creators & Influencers",
-    desc: "Monetize your local lifestyle or food blog audience by sharing your custom affiliate link in bio or reviewing local hot spots.",
+    desc: "Monetize your local lifestyle or food blog audience by sharing your custom affiliate link in bio or reviewing local hot spots — your referred clients receive a 25% discount.",
     termsUrl: "#terms-[#terms-creators]",
+    discountBadge: "25% Client Discount",
   },
   {
     title: "Freelancers & Digital Marketers",
-    desc: "Add digital loyalty software & customer retention as a value-added solution for your existing salon, gym, restaurant, and retail clients.",
+    desc: "Add digital loyalty software & customer retention as a value-added solution for your existing salon, gym, restaurant, and retail clients with a 25% client discount.",
     termsUrl: "#terms-freelancers",
+    discountBadge: "25% Client Discount",
   },
 ];
 
@@ -50,6 +53,7 @@ export function AffiliateContent() {
   const [billingCycle, setBillingCycle] = useState("month"); // "month" or "year"
   const [commissionRate, setCommissionRate] = useState(0.20); // 20% default
   const [referredShops, setReferredShops] = useState(10); // 10 shops default (0 - 100)
+  const [clientDiscountPct, setClientDiscountPct] = useState(37); // 37% for Students, 25% for Creators & Marketers
 
   const plans = [
     {
@@ -57,14 +61,18 @@ export function AffiliateContent() {
       key: "month",
       mrp: 499,
       discountedPrice: 345,
-      referralPrice: 219,
-      referralDiscountPct: 37, // (200- 160) / 200 = 20%
+      referralDiscountPct: clientDiscountPct,
+      referralPrice: Math.round(345 * (1 - clientDiscountPct / 100)),
       features: [
-        "1 Counter QR Code",
-        "Unlimited Regular Customers",
-        "Real-Time Stamp Analytics",
+        "Customer Search",
+        "Digital Loyalty Cards",
       
-        "Standard Support",
+        "Unlimited Loyalty Campaigns",
+        "Unlimited Regular Customers",
+         "1 Counter QR Code"
+        
+        
+      
       ],
     },
     {
@@ -72,8 +80,8 @@ export function AffiliateContent() {
       key: "year",
       mrp: 4990,
       discountedPrice: 3450,
-      referralPrice: 2190,
-      referralDiscountPct:37 ,
+      referralDiscountPct: clientDiscountPct,
+      referralPrice: Math.round(3450 * (1 - clientDiscountPct / 100)),
       features: [
         "1 Counter QR Code (12 Months)",
         "Unlimited Regular Customers",
@@ -167,10 +175,54 @@ export function AffiliateContent() {
 
           {/* Side by Side Grid: Sliders Box on Left (or top), Plan Cards Grid on Right */}
           <div className="grid grid-cols-1 lg:grid-cols-[340px_1fr] gap-6 sm:gap-8 items-start max-w-6xl mx-auto">
-            {/* Left Sliders Control Panel */}
+            {/* Left Sliders & Partner Category Control Panel */}
             <div className="rounded-2xl sm:rounded-3xl border border-line/70 bg-[#F4F1EA]/80 p-5 sm:p-7 shadow-sm space-y-5 sm:space-y-6">
-              {/* Slider 1: Commission Rate */}
+              {/* Partner Category Selector: Client Discount */}
               <div>
+                <label className="font-display text-xs sm:text-sm font-extrabold text-charcoal block mb-2">
+                  Partner Category (Client Discount):
+                </label>
+                <div className="space-y-2">
+                  <button
+                    type="button"
+                    onClick={() => setClientDiscountPct(37)}
+                    className={`w-full flex items-center justify-between p-2.5 sm:p-3 rounded-xl border text-xs font-bold transition-all text-left cursor-pointer ${
+                      clientDiscountPct === 37
+                        ? "border-[#A8342A] bg-[#FCE8E6] text-[#A8342A] shadow-xs ring-1 ring-[#A8342A]/30"
+                        : "border-line/60 bg-white/70 text-gray-700 hover:bg-white"
+                    }`}
+                  >
+                    <div>
+                      <div className="font-extrabold text-xs">Students &amp; Campus Ambassadors</div>
+                      <div className="text-[10px] opacity-75 font-normal">Referred clients get 37% discount</div>
+                    </div>
+                    <span className="font-mono bg-[#A8342A] text-white px-2 py-0.5 rounded text-[10px] font-black shrink-0 ml-1">
+                      37% OFF
+                    </span>
+                  </button>
+
+                  <button
+                    type="button"
+                    onClick={() => setClientDiscountPct(25)}
+                    className={`w-full flex items-center justify-between p-2.5 sm:p-3 rounded-xl border text-xs font-bold transition-all text-left cursor-pointer ${
+                      clientDiscountPct === 25
+                        ? "border-ink-navy bg-ink-navy/10 text-ink-navy shadow-xs ring-1 ring-ink-navy/30"
+                        : "border-line/60 bg-white/70 text-gray-700 hover:bg-white"
+                    }`}
+                  >
+                    <div>
+                      <div className="font-extrabold text-xs">Creators, Influencers &amp; Marketers</div>
+                      <div className="text-[10px] opacity-75 font-normal">Referred clients get 25% discount</div>
+                    </div>
+                    <span className="font-mono bg-ink-navy text-white px-2 py-0.5 rounded text-[10px] font-black shrink-0 ml-1">
+                      25% OFF
+                    </span>
+                  </button>
+                </div>
+              </div>
+
+              {/* Slider 1: Commission Rate */}
+              <div className="border-t border-line/40 pt-4 sm:pt-5">
                 <div className="flex justify-between items-center mb-2.5 sm:mb-3">
                   <label className="font-display text-xs sm:text-sm font-extrabold text-charcoal">
                     Adjust Commission Rate:
@@ -316,7 +368,7 @@ export function AffiliateContent() {
                 );
               })}
             </div>
-            </div>
+          </div>
         </div>
       </section>
 
@@ -343,9 +395,14 @@ export function AffiliateContent() {
                 className="rounded-2xl border border-line bg-card p-5 sm:p-7 shadow-sm hover:shadow-panel transition-all flex flex-col justify-between"
               >
                 <div>
-                  <h3 className="font-display text-base sm:text-base lg:text-lg font-black text-ink-navy uppercase tracking-tight mb-3 border-b border-line/60 pb-2 leading-snug sm:whitespace-nowrap sm:overflow-hidden sm:text-ellipsis">
-                    {p.title}
-                  </h3>
+                  <div className="flex items-center justify-between gap-2 mb-3 border-b border-line/60 pb-2">
+                    <h3 className="font-display text-base sm:text-base lg:text-lg font-black text-ink-navy uppercase tracking-tight leading-snug sm:whitespace-nowrap sm:overflow-hidden sm:text-ellipsis">
+                      {p.title}
+                    </h3>
+                    <span className="font-mono text-[10px] font-extrabold bg-emerald-100 text-emerald-800 border border-emerald-300 px-2 py-0.5 rounded shrink-0">
+                      {p.discountBadge}
+                    </span>
+                  </div>
                   <p className="text-xs sm:text-sm leading-relaxed text-[#4a443f]">
                     <span className="font-serif text-lg font-black text-charcoal/90 mr-0.5 select-none">“</span>
                     {p.desc}
