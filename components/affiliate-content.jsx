@@ -55,10 +55,10 @@ export function AffiliateContent() {
     {
       name: "Month Plan",
       key: "month",
-      mrp: 299,
-      discountedPrice: 200,
-      referralPrice: 160,
-      referralDiscountPct: 20, // (200- 160) / 200 = 20%
+      mrp: 499,
+      discountedPrice: 345,
+      referralPrice: 219,
+      referralDiscountPct: 37, // (200- 160) / 200 = 20%
       features: [
         "1 Counter QR Code",
         "Unlimited Regular Customers",
@@ -70,10 +70,10 @@ export function AffiliateContent() {
     {
       name: "Year Plan",
       key: "year",
-      mrp: 2990,
-      discountedPrice: 2000,
-      referralPrice: 1600,
-      referralDiscountPct: 20,
+      mrp: 4990,
+      discountedPrice: 3450,
+      referralPrice: 2190,
+      referralDiscountPct:37 ,
       features: [
         "1 Counter QR Code (12 Months)",
         "Unlimited Regular Customers",
