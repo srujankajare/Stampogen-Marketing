@@ -142,7 +142,7 @@ export function AffiliateContent() {
               <Button
                 variant="primary"
                 size="lg"
-                className="w-full sm:w-auto px-8 sm:px-10 py-4 sm:py-5 text-base sm:text-lg font-extrabold tracking-wide shadow-lg hover:shadow-xl transition-all"
+                className="w-full sm:w-auto h-auto px-4 sm:px-10 py-3.5 sm:py-5 text-sm sm:text-lg font-extrabold tracking-wide whitespace-normal sm:whitespace-nowrap leading-tight sm:leading-normal shadow-lg hover:shadow-xl transition-all"
               >
                 How to Become An Affiliate Partner →
               </Button>
@@ -151,7 +151,7 @@ export function AffiliateContent() {
               <Button
                 variant="navy"
                 size="lg"
-                className="w-full sm:w-auto px-8 sm:px-10 py-4 sm:py-5 text-base sm:text-lg font-extrabold tracking-wide shadow-lg hover:shadow-xl transition-all"
+                className="w-full sm:w-auto h-auto px-4 sm:px-10 py-3.5 sm:py-5 text-sm sm:text-lg font-extrabold tracking-wide whitespace-normal sm:whitespace-nowrap leading-tight sm:leading-normal shadow-lg hover:shadow-xl transition-all"
               >
                 Create Account →
               </Button>
@@ -475,7 +475,7 @@ export function AffiliateContent() {
               <Button
                 variant="primary"
                 size="lg"
-                className="w-full sm:w-auto px-6 sm:px-10 py-4 sm:py-5 text-base sm:text-xl font-extrabold tracking-wide shadow-xl hover:shadow-2xl transition-all"
+                className="w-full sm:w-auto h-auto px-4 sm:px-10 py-3.5 sm:py-5 text-sm sm:text-xl font-extrabold tracking-wide whitespace-normal sm:whitespace-nowrap leading-tight sm:leading-normal shadow-xl hover:shadow-2xl transition-all"
               >
                 How to Become An Affiliate Partner →
               </Button>
@@ -487,7 +487,7 @@ export function AffiliateContent() {
               <Button
                 variant="navy"
                 size="lg"
-                className="w-full sm:w-auto px-6 sm:px-10 py-4 sm:py-5 text-base sm:text-xl font-extrabold tracking-wide shadow-xl hover:shadow-2xl transition-all"
+                className="w-full sm:w-auto h-auto px-4 sm:px-10 py-3.5 sm:py-5 text-sm sm:text-xl font-extrabold tracking-wide whitespace-normal sm:whitespace-nowrap leading-tight sm:leading-normal shadow-xl hover:shadow-2xl transition-all"
               >
                 Create Account →
               </Button>
