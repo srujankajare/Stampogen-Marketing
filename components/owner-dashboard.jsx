@@ -1,3 +1,7 @@
+"use client";
+
+import { motion } from "framer-motion";
+
 export function OwnerDashboard() {
   return (
     <section className="page-section py-20 bg-[#FBF7EE]">
@@ -122,12 +126,24 @@ export function OwnerDashboard() {
 
             {/* Action Button & Badges */}
             <div className="flex flex-wrap items-center gap-4">
-              <a
-                href="https://app.stampogen.in/admin/register"
-                className="inline-flex items-center gap-2 rounded-xl bg-[#B54A28] px-6 py-3.5 font-display text-[14px] font-bold text-white transition-all hover:bg-[#9E3E20] shadow-md"
+              <motion.div
+                animate={{
+                  scale: [1, 1.03, 1, 1.03, 1],
+                }}
+                transition={{
+                  duration: 1.8,
+                  repeat: Infinity,
+                  ease: "easeInOut",
+                  repeatDelay: 1.2,
+                }}
               >
-                Start free trial →
-              </a>
+                <a
+                  href="https://app.stampogen.in/admin/register"
+                  className="inline-flex items-center gap-2 rounded-xl bg-[#B54A28] px-6 py-3.5 font-display text-[14px] font-bold text-white transition-all hover:bg-[#9E3E20] shadow-md"
+                >
+                  Start free trial →
+                </a>
+              </motion.div>
               <div className="flex items-center gap-4 text-[13px] font-medium text-[#57514A]">
                 <span className="flex items-center gap-1.5"><span className="text-emerald-600">✓</span> No app download</span>
                 <span className="flex items-center gap-1.5"><span className="text-emerald-600">✓</span> No customer signup</span>
