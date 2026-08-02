@@ -89,7 +89,7 @@ export function Pricing() {
                   </li>
                 ))}
               </ul>
-              <a href="https://app.stampogen.in/">
+              <a href="https://app.stampogen.in/admin/register">
                 <Button variant={p.variant} className="w-full justify-center text-sm font-bold py-3">
                   {p.cta}
                 </Button>

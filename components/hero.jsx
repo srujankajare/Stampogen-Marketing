@@ -37,16 +37,37 @@ export function Hero() {
           <p className="mb-8 sm:mb-10 whitespace-normal sm:whitespace-nowrap font-hand text-[18px] sm:text-[25px] font-bold text-brass leading-snug">
             no app. no card to dig out of your wallet. just your <span className="text-charcoal font-black">Email.</span>
           </p>
-          <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3.5 sm:gap-4">
-            <a href="https://app.stampogen.in/user/login" className="w-full sm:w-auto">
-              <Button variant="primary" className="w-full sm:w-auto">Login as user</Button>
-            </a>
-            <a href="https://app.stampogen.in/affiliate/login" className="w-full sm:w-auto">
-              <Button variant="navy" className="w-full sm:w-auto">Login as affiliate</Button>
-            </a>
-            <a href="https://app.stampogen.in/" className="w-full sm:w-auto">
-              <Button variant="ghost" className="w-full sm:w-auto">I run a business→</Button>
-            </a>
+          <div className="flex flex-col gap-4 max-w-[580px]">
+            <motion.div
+              animate={{
+                scale: [1, 1.025, 1, 1.025, 1],
+              }}
+              transition={{
+                duration: 1.8,
+                repeat: Infinity,
+                ease: "easeInOut",
+                repeatDelay: 1.2,
+              }}
+              className="w-full"
+            >
+              <a href="https://app.stampogen.in/admin/register" className="block w-full">
+                <Button variant="primary" size="lg" className="w-full justify-center text-xl sm:text-2xl font-black py-4 sm:py-4.5 tracking-wide">
+                  Start free trial →
+                </Button>
+              </a>
+            </motion.div>
+
+            <div className="flex flex-col sm:flex-row flex-wrap items-stretch sm:items-center gap-3 sm:gap-4">
+              <a href="https://app.stampogen.in/user/login" className="w-full sm:w-auto flex-1">
+                <Button variant="primary" className="w-full justify-center">Login as user</Button>
+              </a>
+              <a href="https://app.stampogen.in/affiliate/login" className="w-full sm:w-auto flex-1">
+                <Button variant="navy" className="w-full justify-center">Login as affiliate</Button>
+              </a>
+              <a href="https://app.stampogen.in/" className="w-full sm:w-auto flex-1">
+                <Button variant="ghost" className="w-full justify-center">I run a business→</Button>
+              </a>
+            </div>
           </div>
         </motion.div>
 
